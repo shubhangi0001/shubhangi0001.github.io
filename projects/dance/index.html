@@ -17,11 +17,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/bootstrap-icons.css" rel="stylesheet" />
     <link href="css/GraceSteps.css" rel="stylesheet" />
+    <link href="css/GraceSteps-responsive.css" rel="stylesheet" />
+    <link href="css/GraceSteps-animate.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -29,12 +30,8 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" width="180px" ="Logo" />
-          </a>
-
-          <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4"
-            >Book Slot</a
-          >
+            <img src="images/logo.png" width="180px" ="Logo" /></a>
+          <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Book Slot</a>
 
           <button
             class="navbar-toggler"
@@ -50,33 +47,35 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
               <li class="nav-item">
-                <a class="nav-link click-scroll" href="#section_1">Home</a>
+                <a class="nav-link click-scroll" href="index.html">Home</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link click-scroll" href="#section_2">About</a>
+                <a class="nav-link click-scroll" href="about.html">About</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link click-scroll" href="#section_3">Courses</a>
+                <a class="nav-link click-scroll" href="#section_3">Classes</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link click-scroll" href="#section_4">Schedule</a>
+                <a class="nav-link click-scroll" href="#section_4">Instructors</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link click-scroll" href="#section_5">Pricing</a>
+                <a class="nav-link click-scroll" href="#section_5">Gallery</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link click-scroll" href="#section_6">Contact</a>
+                <a class="nav-link click-scroll" href="#section_6">Events</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="#section_7">Contact</a>
               </li>
             </ul>
 
-            <a href="ticket.html" class="btn custom-btn d-lg-block d-none"
-              >Book Slot</a
-            >
+            <a href="ticket.html" class="btn custom-btn d-lg-block d-none">Book Slot</a>
           </div>
         </div>
       </nav>
@@ -87,17 +86,13 @@
         <div class="container d-flex justify-content-center align-items-center">
           <div class="row">
             <div class="col-12 mt-auto mb-5 text-center">
-              <!--<small>Grace Steps Presents</small>
-
+              <small>Let's Practice and Perform Together</small>
               <h1 class="text-white mb-5">Grace Steps</h1>
-
-              <a class="btn custom-btn smoothscroll" href="#section_2"
-                >Let's begin</a>-->
+              <a class="btn custom-btn smoothscroll" href="#section_2">Participate</a>
             </div>
 
             <div
-              class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center"
-            >
+              class="col-lg-12 col-12 mt-auto d-flex flex-column flex-lg-row text-center">
               <div class="date-wrap">
                 <h5 class="text-white">
                   <i class="custom-icon bi-clock me-2"></i>
@@ -112,9 +107,9 @@
                 </h5>
               </div>
 
-              <div class="social-share">
+              <!--<div class="social-share">
                 <ul class="social-icon d-flex align-items-center justify-content-center">
-                  <span class="text-white me-3">Share:</span>
+                  <span class="text-white me-3">Share:</span>-->
 
                   <li class="social-icon-item">
                     <a href="#" class="social-icon-link">
@@ -124,7 +119,7 @@
 
                   <li class="social-icon-item">
                     <a href="#" class="social-icon-link">
-                      <span class="bi-twitter"></span>
+                      <span class="bi-github"></span>
                     </a>
                   </li>
 
@@ -138,12 +133,11 @@
             </div>
           </div>
         </div>
-
-        <div class="video-wrap">
+        <!--<div class="video-wrap">
           <video autoplay="" loop="" muted="" class="custom-video" poster="">
             <source src="video/grace_steps.mp4" type="video/mp4" />Your browser does not support the video tag.
           </video>
-        </div>
+        </div>-->
       </section>
 
       <section class="about-section section-padding" id="section_2">
@@ -176,17 +170,16 @@
                   Join us at <b>Grace Steps</b> and let the music move you. Discover the
                   dancer within, unlock your potential, and let your passion for
                   dance take flight. Together, we'll groove to the rhythm of
-                  life!
+                  life! 
                 </p>
+                <a class="btn custom-btn smoothscroll" href="#section_3">Read More</a>
               </div>
             </div>
-
             <div class="col-lg-6 col-12">
               <div class="about-text-wrap">
                 <img
                   src="images/about_us.jpg"
-                  class="about-image img-fluid"
-                />
+                  class="about-image img-fluid"/>
 
                 <div class="about-text-info d-flex">
                   <div class="d-flex">
@@ -196,7 +189,7 @@
                   <div class="ms-4">
                     <h3>a happy moment</h3>
 
-                    <p class="mb-0">your amazing festival experience with us</p>
+                    <p class="mb-0">your amazing experience with us</p>
                   </div>
                 </div>
               </div>
@@ -204,7 +197,11 @@
           </div>
         </div>
       </section>
-
+      <div class="video-wrap">
+        <video autoplay="" loop="" muted="" class="custom-video" poster="">
+          <source src="video/grace_steps.mp4" type="video/mp4" />Your browser does not support the video tag.
+        </video>
+      </div>
       <section class="artists-section section-padding" id="section_3">
         <div class="container">
           <div class="row justify-content-center">
