@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        <!-- Favicon -->
+        <link href="images/favicon.ico" rel="icon" />
+
+        <title>Grace Steps</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/bootstrap-icons.css" rel="stylesheet" />
+        <link href="css/GraceSteps.css" rel="stylesheet" />
+        <link href="css/GraceSteps-responsive.css" rel="stylesheet" />
+        <link href="css/GraceSteps-animate.css" rel="stylesheet" />
+    </head>
+    <body>
+        <main>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" width="180px" ="Logo" />
+                    </a>
+                    <a
+                        href="participate.html"
+                        class="btn custom-btn d-lg-none ms-auto me-4"
+                    >
+                        Book Slot
+                    </a>
+
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="about.html">About</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="classes.html">Classes</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="instructors.html"
+                                    >Instructors</a
+                                >
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="contact.html">Contact</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="gallery.html">Gallery</a>
+                            </li>
+                        </ul>
+
+                        <a href="participate.html" class="btn custom-btn d-lg-block d-none"
+                            >Book Slot</a
+                        >
+                    </div>
+                </div>
+            </nav>
+
+            <section
+                class="classes-section section-padding"
+                style="background-image: url('images/classes.jpg')"
+            >
+            <div class="container">
+                <h2 class="text-center mb-4 text-white">Our Classes</h2>
+                <div class="row class-row">
+                    <div class="col-md-4 col-sm-12">
+                        <div class="class-container">
+                            <img src="images/ballet-1.jpg" alt="Ballet" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="class-container">
+                            <img src="" alt="Classical" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <div class="class-container">
+                            <img src="images/class3.jpg" alt="Class 3" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+                    <div class="col-md-4 col-sm-6">
+                        <div class="class-container">
+                            <img src="images/class4.jpg" alt="Class 4" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="class-container">
+                            <img src="images/class5.jpg" alt="Class 5" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="class-container">
+                            <img src="images/class6.jpg" alt="Class 6" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            </section>
+        </main>
+
+        <section class="contact-section section-padding" id="section_6">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-12 mx-auto">
+                  <h2 class="text-center mb-4">Interested? Let's talk</h2>
+    
+                  <nav class="d-flex justify-content-center">
+                    <div
+                      class="nav nav-tabs align-items-baseline justify-content-center"
+                      id="nav-tab"
+                      role="tablist"
+                    >
+                      <button
+                        class="nav-link active"
+                        id="nav-ContactForm-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-ContactForm"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-ContactForm"
+                        aria-selected="false"
+                      >
+                        <h5>Contact Form</h5>
+                      </button>
+    
+                      <button
+                        class="nav-link"
+                        id="nav-ContactMap-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nav-ContactMap"
+                        type="button"
+                        role="tab"
+                        aria-controls="nav-ContactMap"
+                        aria-selected="false"
+                      >
+                        <h5>Google Maps</h5>
+                      </button>
+                    </div>
+                  </nav>
+    
+                  <div class="tab-content shadow-lg mt-5" id="nav-tabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="nav-ContactForm"
+                      role="tabpanel"
+                      aria-labelledby="nav-ContactForm-tab"
+                    >
+                      <form
+                        class="custom-form contact-form mb-5 mb-lg-0"
+                        action="https://forms.un-static.com/forms/fa1890ef80dcfeaf94ba351dc2debb56de222eab"
+                        method="post"
+                        role="form"
+                      >
+                        <div class="contact-form-body">
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <input
+                                type="text"
+                                name="Name"
+                                id="Name"
+                                class="form-control"
+                                placeholder="Full name"
+                                required
+                              />
+                            </div>
+    
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <input
+                                type="text"
+                                name="Phone-Number"
+                                id="Phone-Number"
+                                class="form-control"
+                                placeholder="Phone Number"
+                                required
+                              />
+                            </div>
+                          </div>
+    
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <input
+                                type="date"
+                                name="Date"
+                                id="Date"
+                                class="form-control"
+                                placeholder="Date"
+                                required
+                              />
+                            </div>
+    
+                            <div class="col-lg-6 col-md-6 col-12">
+                              <select
+                                class="form-control"
+                                name="Time"
+                                placeholder="Book a Slot"
+                              >
+                                <option>Book a Slot</option>
+                                <option>04:00 P.M.</option>
+                                <option>05:45 P.M.</option>
+                                <option>07:30 P.M.</option>
+                                <option>09:15 P.M.</option>
+                              </select>
+                            </div>
+                          </div>
+    
+                          <textarea
+                            name="Message"
+                            rows="3"
+                            class="form-control"
+                            id="Message"
+                            placeholder="Message"
+                          ></textarea>
+    
+                          <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                            <button type="submit" class="form-control">
+                              Send message
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+    
+                    <div
+                      class="tab-pane fade"
+                      id="nav-ContactMap"
+                      role="tabpanel"
+                      aria-labelledby="nav-ContactMap-tab"
+                    >
+                      <iframe
+                        class="google-map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.900312862567!2d72.43715247505331!3d23.064116014776978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9c1732514939%3A0xefe384ba0a79209c!2sIndus%20University!5e0!3m2!1sen!2sin!4v1696218415299!5m2!1sen!2sin"
+                        width="100%"
+                        height="450"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+    
+        <footer class="site-footer">
+            <div class="site-footer-top">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6 col-12">
+                    <h2 class="text-white mb-lg-0">Grace Steps</h2>
+                  </div>
+      
+                  <div
+                  class="col-lg-6 col-12 d-flex justify-content-lg-end align-items-center">
+                  <ul class="social-icon d-flex justify-content-lg-end">
+                    <li class="social-icon-item">
+                      <a href="https://github.com/shubhangi0001" class="social-icon-link">
+                        <span class="bi-github"></span>
+                      </a>
+                    </li>
+      
+                    <li class="social-icon-item">
+                      <a href="https://www.linkedin.com/in/shubhangi23/" class="social-icon-link">
+                        <span class="bi-linkedin"></span>
+                      </a>
+                    </li>
+      
+                    <li class="social-icon-item">
+                      <a href="https://www.behance.net/" class="social-icon-link">
+                        <span class="bi-behance"></span>
+                      </a>
+                    </li>
+      
+                    <li class="social-icon-item">
+                      <a href="https://in.pinterest.com/" class="social-icon-link">
+                        <span class="bi-pinterest"></span>
+                      </a>
+                    </li>
+      
+                    <li class="social-icon-item">
+                      <a href="https://shubhangigoswami.medium.com/" class="social-icon-link">
+                        <span class="bi-medium"></span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-12 mb-4 pb-2">
+                  <h5 class="site-footer-title mb-3">Links</h5>
+      
+                  <ul class="site-footer-links">
+                    <li class="site-footer-link-item">
+                      <a href="index.html" class="site-footer-link">Home</a>
+                    </li>
+      
+                    <li class="site-footer-link-item">
+                      <a href="about.html" class="site-footer-link">About</a>
+                    </li>
+      
+                    <li class="site-footer-link-item">
+                      <a href="contact.html" class="site-footer-link">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+      
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                  <h5 class="site-footer-title mb-3">Have a question?</h5>
+      
+                  <p class="text-white d-flex mb-1">
+                    <a href="tel: +91 1234567890" class="site-footer-link">
+                      +91 1234567890
+                    </a>
+                  </p>
+      
+                  <p class="text-white d-flex">
+                    <a href="mailto:goswamishubhangi.21.cs@iite.indusuni.ac.in" class="site-footer-link">
+                      goswamishubhangi.21.cs@iite.indusuni.ac.in
+                    </a>
+                  </p>
+                </div>
+      
+                <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                  <h5 class="site-footer-title mb-3">Location</h5>
+      
+                  <p class="text-white d-flex mt-3 mb-2">
+                    Indus University, Ahmedabad</p>
+                </div>
+              </div>
+            </div>
+      
+            <div class="site-footer-bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-3 col-12 mt-5">
+                    <p class="copyright-text">Copyright © 2023 GrooveX Shubhangi</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/custom.js"></script>
+      </body>
+  </body>
+</html>
+
+       
