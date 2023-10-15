@@ -587,6 +587,26 @@ strong {
   background-color: #f5f5f5; /* Set a background color if needed */
 }
 
+.rectangular-boxes {
+  background-color: #f0f0f0; /* Set the background color of the section */
+  padding: 30px; /* Add padding to the section */
+
+  /* Style the box */
+  .box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+  }
+
+  /* Style the images inside the boxes */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+
 /*---------------------------------------
   ARTISTS              
 -----------------------------------------*/
@@ -594,12 +614,19 @@ strong {
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
+  display: flex;
+}
+
+.artists-image-wrap {
+  flex: 1;
 }
 
 .artists-image {
   border-radius: var(--border-radius-medium);
   display: block;
   width: 100%;
+  height: auto;
+  padding: auto;
 }
 
 .artists-thumb:hover .artists-hover {
@@ -613,8 +640,8 @@ strong {
   border-radius: var(--border-radius-medium);
   backdrop-filter: blur(5px) saturate(180%);
   -webkit-backdrop-filter: blur(5px) saturate(180%);
-  margin: 20px;
-  padding: 35px;
+  margin: 5px;
+  padding: 15px;
   transition: all 0.5s ease;
   transform: translateY(100%);
   position: absolute;
@@ -628,7 +655,7 @@ strong {
   color: var(--white-color);
   display: inline-block;
   min-width: 180px;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 
 .artists-hover p a {
