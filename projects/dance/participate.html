@@ -3,107 +3,254 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>GrooveX - Slot booking</title>
+    <!-- Favicon -->
+    <link href="images/favicon.ico" rel="icon">
+
+    <title>Grace Steps</title>
 
     <!-- CSS FILES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/bootstrap-icons.css" rel="stylesheet" />
-    <link href="css/GrooveX.css" rel="stylesheet" />
+    <link href="css/GraceSteps.css" rel="stylesheet" />
+    <link href="css/GraceSteps-responsive.css" rel="stylesheet" />
+    <link href="css/GraceSteps-animate.css" rel="stylesheet" />
   </head>
 
   <body>
     <main>
-      <section class="ticket-section section-padding">
-        <div class="section-overlay"></div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" width="180px" ="Logo" /></a>
+          <a href="participate.html" class="btn custom-btn d-lg-none ms-auto me-4">Book Slot</a>
 
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="classes.html">Classes</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="instructors.html">Instructors</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="contact.html">Contact</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="gallery.html">Gallery</a>
+              </li>
+
+            </ul>
+
+            <a href="participate.html" class="btn custom-btn d-lg-block d-none">Book Slot</a>
+          </div>
+        </div>
+      </nav>
+ 
+      <section class="about-banner" id="section_2">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-10 mx-auto">
-              <form
-                class="custom-form ticket-form mb-5 mb-lg-0"
-                action="https://forms.un-static.com/forms/fa1890ef80dcfeaf94ba351dc2debb56de222eab"
-                method="post"
-                role="form"
-              >
-                <h2 class="text-center mb-4">Get started here</h2>
+            <div class=class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+              <div class="services-info"><br><br><br><br><br><br>
+                <h1 class="text-white mb-4">Participate Now</h1>
+                
+          </div>
+        </div>
+      </section>
+      <section class="contact-section section-padding" id="section_6">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-12 mx-auto">
+              <h2 class="text-center mb-4">Interested? Let's talk</h2>
 
-                <div class="ticket-form-body">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6 col-12">
-                      <input
-                        type="text"
-                        name="Name"
-                        id="Name"
-                        class="form-control"
-                        placeholder="Full name"
-                        required
-                      />
-                    </div>
+              <nav class="d-flex justify-content-center">
+                <div
+                  class="nav nav-tabs align-items-baseline justify-content-center"
+                  id="nav-tab"
+                  role="tablist">
+                  <button
+                    class="nav-link active"
+                    id="nav-ContactForm-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-ContactForm"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-ContactForm"
+                    aria-selected="false">
+                    <h5>Contact Form</h5>
+                  </button>
 
-                    <div class="col-lg-6 col-md-6 col-12">
-                      <input
-                        type="text"
-                        name="Phone-Number"
-                        id="Phone-Number"
-                        class="form-control"
-                        placeholder="Phone Number"
-                        required
-                      />
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-lg-6 col-md-6 col-12">
-                      <input
-                        type="date"
-                        name="Date"
-                        id="Date"
-                        class="form-control"
-                        placeholder="Date"
-                        required
-                      />
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 col-12">
-                      <select
-                        class="form-control"
-                        name="Time"
-                        placeholder="Book a Slot"
-                      >
-                        <option>Book a Slot</option>
-                        <option>04:00 P.M.</option>
-                        <option>05:45 P.M.</option>
-                        <option>07:30 P.M.</option>
-                        <option>09:15 P.M.</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <textarea
-                    name="Message"
-                    rows="3"
-                    class="form-control"
-                    id="Message"
-                    placeholder="Message"
-                  ></textarea>
-
-                  <div class="col-lg-4 col-md-10 col-8 mx-auto">
-                    <button type="submit" class="form-control">
-                      Send message
-                    </button>
-                  </div>
+                  <button
+                    class="nav-link"
+                    id="nav-ContactMap-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#nav-ContactMap"
+                    type="button"
+                    role="tab"
+                    aria-controls="nav-ContactMap"
+                    aria-selected="false">
+                    <h5>Google Maps</h5>
+                  </button>
                 </div>
-              </form>
+              </nav>
+
+              <div class="tab-content shadow-lg mt-5" id="nav-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="nav-ContactForm"
+                  role="tabpanel"
+                  aria-labelledby="nav-ContactForm-tab">
+                  <form
+                    class="custom-form contact-form mb-5 mb-lg-0"
+                    action="connect.php"
+                    method="post"
+                    role="form">
+                    <div class="contact-form-body">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <input
+                            type="text"
+                            name="Name"
+                            id="Name"
+                            class="form-control"
+                            placeholder="Full name"
+                            required
+                          />
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <input
+                            type="text"
+                            name="Phone-Number"
+                            id="Phone-Number"
+                            class="form-control"
+                            placeholder="Phone Number"
+                            required
+                          />
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <input
+                            type="text"
+                            name="Name"
+                            id="Name"
+                            class="form-control"
+                            placeholder="E-mail"
+                            required
+                          />
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <select
+                            name="Class"
+                            class="form-control"
+                            placeholder="Select a Class"
+                          >
+                            <option>Select a Class</option>
+                            <option>Garba Class</option>
+                            <option>Indian Classical</option>
+                            <option>Ballet</option>
+                            <option>Jazz</option>
+                            <option>Hip-hop</option>
+                            <option>Contemporary</option>
+                            <option>Free Style</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <input
+                            type="date"
+                            name="Date"
+                            id="Date"
+                            class="form-control"
+                            placeholder="Date"
+                            required
+                          />
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <select
+                            class="form-control"
+                            name="Time"
+                            placeholder="Book a Slot"
+                          >
+                            <option>Book a Slot</option>
+                            <option>04:00 P.M.</option>
+                            <option>05:45 P.M.</option>
+                            <option>07:30 P.M.</option>
+                            <option>09:15 P.M.</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <textarea
+                        name="Message"
+                        rows="3"
+                        class="form-control"
+                        id="Message"
+                        placeholder="Message"
+                      ></textarea>
+
+                      <div class="col-lg-4 col-md-10 col-8 mx-auto">
+                        <button type="submit" class="form-control">
+                          Send message
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="nav-ContactMap"
+                  role="tabpanel"
+                  aria-labelledby="nav-ContactMap-tab"
+                >
+                  <iframe
+                    class="google-map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.900312862567!2d72.43715247505331!3d23.064116014776978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9c1732514939%3A0xefe384ba0a79209c!2sIndus%20University!5e0!3m2!1sen!2sin!4v1696218415299!5m2!1sen!2sin"
+                    width="100%"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+              </div>
             </div>
           </div>
         </div>
