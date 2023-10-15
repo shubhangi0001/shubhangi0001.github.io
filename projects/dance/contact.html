@@ -9,7 +9,6 @@
     <!-- Favicon -->
     <link href="images/favicon.ico" rel="icon">
 
-
     <title>Grace Steps</title>
 
     <!-- CSS FILES -->
@@ -31,9 +30,62 @@
         <div class="container">
           <a class="navbar-brand" href="index.html">
             <img src="images/logo.png" width="180px" ="Logo" /></a>
+          <a href="participate.html" class="btn custom-btn d-lg-none ms-auto me-4">Book Slot</a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="classes.html">Classes</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="instructors.html">Instructors</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="contact.html">Contact</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link click-scroll" href="gallery.html">Gallery</a>
+              </li>
+
+            </ul>
+
+            <a href="participate.html" class="btn custom-btn d-lg-block d-none">Book Slot</a>
+          </div>
         </div>
       </nav>
-      <br><br><br><br>
+ 
+      <section class="about-banner" id="section_2">
+        <div class="container">
+          <div class="row">
+            <div class=class="col-lg-6 col-12 mb-4 mb-lg-0 d-flex align-items-center">
+              <div class="services-info"><br><br><br><br><br><br>
+                <h1 class="text-white mb-4">Contact Us</h1>
+                
+          </div>
+        </div>
+      </section>
       <section class="contact-section section-padding" id="section_6">
         <div class="container">
           <div class="row">
@@ -79,7 +131,7 @@
                   aria-labelledby="nav-ContactForm-tab">
                   <form
                     class="custom-form contact-form mb-5 mb-lg-0"
-                    action="https://forms.un-static.com/forms/fa1890ef80dcfeaf94ba351dc2debb56de222eab"
+                    action="connect.php"
                     method="post"
                     role="form">
                     <div class="contact-form-body">
@@ -104,6 +156,36 @@
                             placeholder="Phone Number"
                             required
                           />
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <input
+                            type="text"
+                            name="Name"
+                            id="Name"
+                            class="form-control"
+                            placeholder="E-mail"
+                            required
+                          />
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <select
+                            name="Class"
+                            class="form-control"
+                            placeholder="Select a Class"
+                          >
+                            <option>Select a Class</option>
+                            <option>Garba Class</option>
+                            <option>Indian Classical</option>
+                            <option>Ballet</option>
+                            <option>Jazz</option>
+                            <option>Hip-hop</option>
+                            <option>Contemporary</option>
+                            <option>Free Style</option>
+                          </select>
                         </div>
                       </div>
 
