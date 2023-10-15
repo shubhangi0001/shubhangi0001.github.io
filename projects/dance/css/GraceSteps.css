@@ -36,7 +36,6 @@ body {
   font-family: var(--body-font-family);
 }
 
-
 /*---------------------------------------
   TYPOGRAPHY               
 -----------------------------------------*/
@@ -492,14 +491,7 @@ strong {
 
 /*---------------------------------------
   ABOUT              
------------------------------------------
-.about-section {
-  background-image: url('../images/about-blur.jpg');
-  background-color: #704010;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}*/
+-----------------------------------------*/
 
 .about-image {
   border-radius: var(--border-radius-medium);
@@ -670,68 +662,7 @@ strong {
   margin: 1.5rem 0;
 }
 
-/*---------------------------------------
-  INSTRUCTORS
------------------------------------------*/
-.instructors-thumb {
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 30px;
-  display: flex;
-}
 
-.instructors-image-wrap {
-  flex: 1;
-}
-
-.instructors-image {
-  border-radius: var(--border-radius-medium);
-  display: block;
-  width: 100%;
-  height: auto;
-  padding: auto;
-}
-
-.instructors-thumb:hover .instructors-hover {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-.instructors-hover {
-  background-color: var(--primary-color);
-  background-color: rgba(248, 203, 46, 0.75);
-  border-radius: var(--border-radius-medium);
-  backdrop-filter: blur(5px) saturate(180%);
-  -webkit-backdrop-filter: blur(5px) saturate(180%);
-  margin: 5px;
-  padding: 15px;
-  transition: all 0.5s ease;
-  transform: translateY(100%);
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  opacity: 0;
-}
-
-.instructors-hover p strong {
-  color: var(--white-color);
-  display: inline-block;
-  min-width: 180px;
-  margin-right: 5px;
-}
-
-.instructors-hover p a {
-  color: var(--secondary-color);
-}
-
-.instructors-hover p a:hover {
-  color: var(--white-color);
-}
-
-.instructors-hover hr {
-  margin: 1.5rem 0;
-}
 
 /*---------------------------------------
   PRICING              
