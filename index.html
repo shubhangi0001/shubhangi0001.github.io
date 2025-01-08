@@ -583,30 +583,35 @@
 
           <div class="col-lg-8">
             <form method="post" action="https://forms.un-static.com/forms/0e5a4abaaa05e73f7252617047f03421e816d5bf"></form>
-              <div class="row gy-4">
+              <div class="row g-3">
                 <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                        <label for="name">Your Name</label>
+                    </div>
                 </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                <div class="col-md-6">
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                        <label for="email">Your Email</label>
+                    </div>
                 </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                <div class="col-12">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject">
+                        <label for="subject">Subject</label>
+                    </div>
                 </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                <div class="col-12">
+                    <div class="form-floating">
+                        <textarea class="form-control" name="message" placeholder="Leave a message here" id="message" style="height: 100px"></textarea>
+                        <label for="message">Message</label>
+                    </div>
                 </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                  <button type="submit">Send Message</button>
-                </div>
-              </div>
+                <div class="col-12">
+                    <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                </div>                                
+            </div>
             </form>
           </div>
         </div>
